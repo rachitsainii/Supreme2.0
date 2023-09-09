@@ -9,15 +9,21 @@ void OddEven(int n){
     }
 }
 
-bool isPowerOfTwo(unsigned int x){
-    return (!(x & (x-1)));
+int countAllSetBits(int n){
+    int count = 0;
+    while (n > 0){
+        n = n & (n-1);
+        count ++;
+    }
+
+    return count;
 }
 
 int main(){
 
     // OddEven(100000101);
 
-    int ans = isPowerOfTwo(0);
+    int ans = countAllSetBits(9);
     cout << ans << endl;
 
 
