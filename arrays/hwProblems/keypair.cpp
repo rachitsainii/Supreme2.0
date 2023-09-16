@@ -1,4 +1,6 @@
 #include<iostream>
+#include<bits/stdc++.h>
+
 using namespace std;
 
 bool keyPair(int arr[], int x){
@@ -13,7 +15,7 @@ bool keyPair(int arr[], int x){
 }
 
 int main(){
-
+    
     int arr[5] = {1,2,4,3,6};
 
     int x = 10;
